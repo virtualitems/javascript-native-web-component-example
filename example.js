@@ -22,7 +22,7 @@ class ExampleComponent extends HTMLElement {
    */
   getHTML() {
     // extract required values from attributes
-    const id = this.getAttribute('id');
+    const id = this.getAttribute('id') || '';
 
     // generate the HTML
     const html = `
@@ -39,7 +39,7 @@ class ExampleComponent extends HTMLElement {
         }
       </style>
       <slot></slot>
-      <h2>id = "${id ? id : ''}"</h2>
+      <h2>id = "${id}"</h2>
     `;
 
     return html;
