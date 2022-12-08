@@ -1,0 +1,1 @@
+# Javascript native component example
